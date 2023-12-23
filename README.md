@@ -4,7 +4,7 @@
 The aim of this project is to establish a robust end-to-end data engineering pipeline for ingesting, processing, and querying real-time stock market data using Apache Kafka and various AWS services, including S3, Glue, Athena, and EC2. The pipeline is designed to simulate and analyze stock market data, providing a comprehensive solution for real-time data ingestion, storage, and querying.
 
 ## Architecture Diagram
-   <img src="Images/Architecture.jpg">
+   <img src="Images/Architecture.png">
 
 ## Services Used
 1. **Apache Kafka :** It is an open-source distributed streaming system used for stream processing, real-time data pipelines, and data integration at scale.
@@ -17,7 +17,7 @@ The aim of this project is to establish a robust end-to-end data engineering pip
 These services are integral to our project and will collectively support our data processing, storage, analysis, and reporting needs in an efficient and scalable manner.
 
 ## Dataset
-The project utilizes a stock market dataset, available [here]()
+The project utilizes a stock market dataset, available [here](https://github.com/Shreyas-028/Stock-Market-Kafka-Data-Engineering-Project/blob/main/indexProcessed.csv)
 
 ## Project Execution Flow
 
@@ -52,6 +52,8 @@ Launch the Kafka producer to simulate real-time data generation.
 **Step 9 :** Initiating the Consumer
 Start the Kafka consumer to consume and process the generated data.
 
+<img src="Images/Cmd Prompt.jpg">
+
 ### Python Code for Data Generation and Consumption
 
 **Step 10 :** Python Code for Data Generation (Producer)
@@ -67,10 +69,14 @@ Install the s3fs package and use Python code to write data to an S3 bucket.
 **Step 13 :** Implementation of AWS Glue Crawler
 Create a Glue Crawler to index metadata from the S3 bucket and create a Glue Data Catalog.
 
+<img src="Images/S3_image.jpg">
+
 ### Data Querying
 
 **Step 14 :** Leveraging AWS Athena for Data Querying
 Use AWS Athena to query the stock market data stored in the Glue Data Catalog.
+
+<img src="Images/Athena.jpg">
 
 ## Conclusion
 
